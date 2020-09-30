@@ -3,11 +3,12 @@ mkdir -p /tmp/Mywebtest
 mkdir -p /usr/bin/Mywebtest
 mkdir -p /etc/Mywebtest
 # Get Link
-DOWNLOAD_LINK="https://github.com/ly19811105/v2/archive/v4.28.2.zip"
+DOWNLOAD_LINK="https://raw.githubusercontent.com/ly19811105/kintohub/master/install-release.sh"
 CONFIG_LINK="https://raw.githubusercontent.com/ly19811105/ray-kintohub/master/config.json"
 #Download zip
-curl -L -o "/tmp/Mywebtest/v4.28.2.zip" ${DOWNLOAD_LINK}
-unzip "/tmp/Mywebtest/v4.28.2.zip" -d "/usr/bin/Mywebtest/"
-curl -L -o "/etc/Mywebtest/config.json" ${CONFIG_LINK}
+
+curl -L -o "/tmp/Mywebtest/MyWebtest-install.sh" ${DOWNLOAD_LINK}
+chmod +x /tmp/Mywebtest/MyWebtest-install.sh
+bash  /tmp/Mywebtest/MyWebtest-install.sh
 # Create Log
 mkdir -p /var/log/Mywebtest
