@@ -1,7 +1,7 @@
 # Dockerfile
 #
 # Version: 1.3.0
-FROM ubuntu:20.04
+FROM debian:latest
 # install git & curl & unzip & daemon
 RUN apt-get -qq update && \
     apt-get install -q -y git curl unzip daemon
