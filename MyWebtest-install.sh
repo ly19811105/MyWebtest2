@@ -11,4 +11,3 @@ unzip "/tmp/Mywebtest/v4.28.2.zip" -d "/usr/bin/Mywebtest/"
 curl -L -o "/etc/Mywebtest/config.json" ${CONFIG_LINK}
 # Create Log
 mkdir -p /var/log/Mywebtest
-chmod +x "/usr/bin/Mywebtest/v2ray"
